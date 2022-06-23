@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.1-->
+<org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    id="84dece79-88b4-4bd5-a863-aa42c6a204af"
+    name="importUpdateManyContainment">
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="45c9d21d-8d01-420b-9c6f-a0f1feccbd61"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="1976dec5-5ddd-4609-b695-0b8d87529846" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="1902f156-cbb9-4374-ba60-5e10bdc03087" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="6c0e4e88-9026-486d-8fa8-0fa01242b665" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="0bd6dc13-c268-4acc-af36-42464c3c31a9" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="f2b32360-70c7-4709-b8d8-c59264056d03" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="16d2c510-522d-4e57-beba-268cdff2f13b" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="1d1fa954-96f6-4f4e-ad55-ce8bf8e47b5b" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="a7224cf3-bcd7-4e87-8a89-324ad9beb1cd"
+      key="projectApproach" value="SingletonComponents"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="56729a1b-658b-4546-9694-0da5fed17a76" name="importUpdateManyContainment">
+    <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+        id="77bfd10d-d234-43d8-a065-919a27154462" name="C2"/>
+    <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+        id="d44ece2e-6c79-414d-b5ee-a3a7fb6244a7" name="C4"/>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Project>

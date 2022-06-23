@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.navalgroup.conversion.capella.csv.doc;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Vendor: %providerName
+Require-Bundle: org.eclipse.help
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.navalgroup.conversion.capella.csv.doc
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin

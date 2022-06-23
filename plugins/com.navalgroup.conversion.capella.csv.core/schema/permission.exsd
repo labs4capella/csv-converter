@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.navalgroup.conversion.capella.csv.core" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.navalgroup.conversion.capella.csv.core" id="permission" name="com.navalgroup.conversion.capella.csv.core.permission"/>
+      </appinfo>
+      <documentation>
+         This extension point allows to define a way to lock/unlock Capella Models when importing/exporting CSV files.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="capellaCSVPermission"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="capellaCSVPermission">
+      <annotation>
+         <documentation>
+            This extension point allows to define a way to lock/unlock Capella Models when importing/exporting CSV files.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="permission" type="string" use="required">
+            <annotation>
+               <documentation>
+                  The contributed CapellaCSVPermission
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.navalgroup.conversion.capella.csv.core.extension.CapellaCSVPermission"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="priority" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Integer used to define the priority in which this permission should be called. The highest priority participant will be called first. ( 0 is called after 1 that is called after 2 etc...)
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         since 1.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         [Enter extension point usage example here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         [Enter API information here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         See com.navalgroup.conversion.capella.csv.core plugin.
+      </documentation>
+   </annotation>
+
+
+</schema>

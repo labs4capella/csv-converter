@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (c) 2021 Naval Group SA.
+    All right reserved. This program and the accompanying materials are made 
+    available under the terms of the Eclipse Public License 2.0
+    which is available at https://www.eclipse.org/legal/epl-2.0/
+
+    Contributors:
+        Obeo - initial API and implementation
+-->
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="com.navalgroup.conversion.capella.csv.core.ui.category"
+            name="Capella Conversion">
+      </category>
+      <command
+            categoryId="com.navalgroup.conversion.capella.csv.core.ui.category"
+            id="com.navalgroup.conversion.capella.csv.core.ui.commands.emptyCSVCmd"
+            name="Generate empty CSV Command">
+      </command>
+      <command
+            categoryId="com.navalgroup.conversion.capella.csv.core.ui.category"
+            id="com.navalgroup.conversion.capella.csv.core.ui.commands.capellaMetamodelCSVCmd"
+            name="Generate Capella CSV Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.navalgroup.conversion.capella.csv.core.ui.handlers.GenerateEmptyCSVHandler"
+            commandId="com.navalgroup.conversion.capella.csv.core.ui.commands.emptyCSVCmd">
+      </handler>
+      <handler
+            class="com.navalgroup.conversion.capella.csv.core.ui.handlers.GenerateCapellaCSVHandler"
+            commandId="com.navalgroup.conversion.capella.csv.core.ui.commands.capellaMetamodelCSVCmd">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="com.navalgroup.conversion.capella.csv.core.ui.tester.CapellaProjectPropertyTester"
+            id="com.navalgroup.conversion.capella.csv.core.ui.property.tester.capella.project"
+            namespace="com.navalgroup.conversion.capella.csv.core.ui.property.tester"
+            properties="capellaProject"
+            type="org.eclipse.core.resources.IProject">
+      </propertyTester>
+      <propertyTester
+            class="com.navalgroup.conversion.capella.csv.core.ui.tester.IsCapellaMetamodelConversionActivatedPropertyTester"
+            id="com.navalgroup.conversion.capella.csv.core.ui.property.tester.isCapellaMetamodelConversionActivated"
+            namespace="com.navalgroup.conversion.capella.csv.core.ui.property.tester"
+            properties="isCapellaMetamodelConversionActivated"
+            type="org.eclipse.core.resources.IProject">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               icon="icons/conversion.gif"
+               id="com.navalgroup.conversion.capella.menu.conversion"
+               label="Capella Conversion">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="selection">
+                  <iterate
+                        operator="and" 
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.core.resources.IProject">
+                     </instanceof>
+                     <test
+                           forcePluginActivation="true"
+                           property="com.navalgroup.conversion.capella.csv.core.ui.property.tester.capellaProject">
+                     </test>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:com.navalgroup.conversion.capella.menu.conversion">
+         <command
+               commandId="com.navalgroup.conversion.capella.csv.core.ui.commands.emptyCSVCmd"
+               icon="icons/empty-csv.png"
+               label="Generate empty CSV files"
+               style="push">
+         </command>
+         <separator
+               name="com.navalgroup.conversion.capella.csv.core.ui.separator1"
+               visible="true">
+         </separator>
+         <command
+               commandId="com.navalgroup.conversion.capella.csv.core.ui.commands.capellaMetamodelCSVCmd"
+               label="Generate Capella Metamodel file"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <with
+                     variable="selection">
+                  <iterate
+                        operator="and" 
+                        ifEmpty="false">
+                     <instanceof
+                           value="org.eclipse.core.resources.IProject">
+                     </instanceof>
+                     <test
+                           forcePluginActivation="true"
+                           property="com.navalgroup.conversion.capella.csv.core.ui.property.tester.isCapellaMetamodelConversionActivated">
+                     </test>
+                  </iterate>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.polarsys.capella.core.platform.sirius.ui.actions.Capella.page"
+            class="org.eclipse.ui.internal.dialogs.EmptyPreferencePage"
+            id="com.navalgroup.conversion.capella.csv.core.ui.prefs.page"
+            name="Capella Conversion">
+      </page>
+      <page
+            category="com.navalgroup.conversion.capella.csv.core.ui.prefs.page"
+            class="com.navalgroup.conversion.capella.csv.core.ui.preferences.CapellaToCSVPreferencePage"
+            id="com.navalgroup.conversion.capella.csv.core.ui.prefs.page"
+            name="Capella / CSV">
+      </page>
+   </extension>
+</plugin>

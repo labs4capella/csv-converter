@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.2-->
+<org.polarsys.capella.core.data.capellamodeller:SystemEngineering xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    id="13b5e301-d0b2-4ebd-a06a-c3423f50d29c"
+    name="exportManyNonContainment"
+    appliedPropertyValues="#6c3c2071-ea15-4c68-ab95-30366be53f37 #523f5896-92af-4829-99b0-3f90ebc1494b">
+    <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:BooleanPropertyValue"
+        id="6c3c2071-ea15-4c68-ab95-30366be53f37" name="BooleanPropertyValue 1"/>
+    <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+        id="523f5896-92af-4829-99b0-3f90ebc1494b" name="FloatPropertyValue 2"/>
+</org.polarsys.capella.core.data.capellamodeller:SystemEngineering>

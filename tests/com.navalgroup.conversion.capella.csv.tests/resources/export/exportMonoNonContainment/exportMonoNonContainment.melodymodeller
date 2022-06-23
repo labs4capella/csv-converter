@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.2-->
+<org.polarsys.capella.core.data.pa:PhysicalComponentPkg xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/1.4.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.4.0"
+    id="a53b66d4-9b08-434f-adb4-f27a95f3873b"
+    name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="8ff1c37c-3f3e-4e87-8b44-e8f1e5852988"
+            name="Physical System" abstractType="#7c18eafa-2192-4193-afb7-c7879425a3e1"/>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="7c18eafa-2192-4193-afb7-c7879425a3e1" name="Physical System"/>
+</org.polarsys.capella.core.data.pa:PhysicalComponentPkg>

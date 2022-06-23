@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.2-->
+<org.polarsys.capella.core.data.capellamodeller:SystemEngineering xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/1.4.0"
+    id="375eea0d-2aa9-4e3a-87a4-8813f4b937fa"
+    name="exportOnExistingFiles">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="f3d1a065-5e77-439f-bbe8-04ce2a71c366" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="eaaeae0c-107c-41f8-8b3c-ae5c5329d3c0" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="11ba1ab7-90a4-4af7-80a4-e1e1b7950224" name="Root Logical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="9316fbbb-ef9d-416d-91aa-3efec4499b07" name="LogicalFunction 1"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="edd5a4bb-4a30-465d-8902-6300cb16d2c0" name="LogicalFunction 2"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="de9db52e-e91c-4e07-8787-4f3c98223403" name="LogicalFunction 3"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+    </ownedArchitectures>
+</org.polarsys.capella.core.data.capellamodeller:SystemEngineering>
