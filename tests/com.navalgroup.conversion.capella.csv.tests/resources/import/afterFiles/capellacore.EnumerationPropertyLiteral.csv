@@ -1,0 +1,7 @@
+"To create";"Creation date";"Creation time";"To update";"Last update date";"Last update time";"To delete";"Deletion date";"Deletion time";"summary";"visibleInDoc";"review";"name";"description";"id";"visibleInLM";"sid";"features";"appliedPropertyValueGroups";"appliedPropertyValues";"status";"ownedConstraints";"ownedExtensions";"ownedMigratedElements";"ownedPropertyValues";"ownedPropertyValueGroups";"ownedEnumerationPropertyTypes"
+;"20210329";"15:03:06.745+02:00";;"20210329";"15:03:06.745+02:00";;;;;"true";;"DRAFT";;"1c66f374-50f3-45bb-9a56-8eb761200ae1";"true";;;;;;;;;;;
+;"20210329";"15:03:06.745+02:00";;"20210329";"15:03:06.745+02:00";;;;;"true";;"TO_BE_REVIEWED";;"dabad009-296c-4db2-95dc-024a640cee41";"true";;;;;;;;;;;
+;"20210329";"15:03:06.746+02:00";;"20210329";"15:03:06.746+02:00";;;;;"true";;"TO_BE_DISCUSSED";;"b13aad6e-c9db-4019-9719-6bb24ee3a3a5";"true";;;;;;;;;;;
+;"20210329";"15:03:06.746+02:00";;"20210329";"15:03:06.746+02:00";;;;;"true";;"REWORK_NECESSARY";;"d485fc16-f3e0-4119-92f3-e2c89ceca1ae";"true";;;;;;;;;;;
+;"20210329";"15:03:06.747+02:00";;"20210329";"15:03:06.747+02:00";;;;;"true";;"UNDER_REWORK";;"d290080e-1689-4427-8e38-7ac9ffee6ec5";"true";;;;;;;;;;;
+;"20210329";"15:03:06.747+02:00";;"20210329";"15:03:06.747+02:00";;;;;"true";;"REVIEWED_OK";;"dbab142f-12ac-4e9d-b50d-67dcca6302c6";"true";;;;;;;;;;;

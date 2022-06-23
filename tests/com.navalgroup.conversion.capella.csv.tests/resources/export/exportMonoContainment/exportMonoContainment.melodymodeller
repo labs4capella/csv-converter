@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.2-->
+<org.polarsys.capella.core.data.oa:OperationalAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0"
+    id="b5a79e0c-d073-4065-8953-0ee1bad48902"
+    name="Operational Analysis">
+      <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="74019aa7-3d09-4f12-87f3-f33188ad17b1"
+          name="RolePkg1"/>
+</org.polarsys.capella.core.data.oa:OperationalAnalysis>

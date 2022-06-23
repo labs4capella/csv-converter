@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.4.2-->
+<org.polarsys.capella.core.data.capellamodeller:SystemEngineering xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.4.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.4.0"
+    id="21065f6e-5f68-4b27-8fda-70303f552ee6"
+    name="exportManyContainment">
+    <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+        id="dc5e7581-4edf-4f35-92f7-98d088c030f4" name="C1"/>
+    <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+        id="337a6def-f8f8-41bd-a74e-c9144d84586c" name="C2"/>
+    <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+        id="d6ca15c9-0e8f-4f32-9f98-05ae831df53a" name="C3"/>
+</org.polarsys.capella.core.data.capellamodeller:SystemEngineering>
